@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Intro to JavaScript</title>
+		<style>
+			body
+			{
+			font-family:Georgia;
+			text-align:center;
+			}
+			input[type="text"]
+			{
+			width:50%;
+			}
+			div
+			{
+			margin:0 auto;
+			background:#e74c3c;
+			width:300px;
+			height:50px;
+			margin-bottom:40px;
+			color:white;
+			padding-top:50px;
+			padding-bottom:50px;
+			}
+		</style>
+	</head>
+	<body>	
+	
+	<div onclick="example();">
+	I use onclick!
+	</div>
+	
+	<div onmouseover="example();">
+	I use onmouseover!
+	</div>
+	
+	<div onmousedown="example();">
+	I use onmousedown!
+	</div>
+	
+	<div onmouseup="example();">
+	I use onmouseup!
+	</div>
+	
+	<div ondblclick="example();">
+	I use ondblclick!<br />
+	Double click me to see!
+	</div>
+	
+	
+	<h1 onmouseover="style.color='red'"
+onmouseout="style.color='blue'">
+I go red onmouseover, and blue on mouseout</h1>
+
+<input type="text" onfocus="example()" placeholder="I activate when I'm clicked or tabbed into! (onfocus)" />
+<input type="text" onblur="example()" placeholder="I activate when you leave me :( (onblur)" />
+
+	
+		<script>
+			function example()
+			{
+				alert("Hello world!");
+			}			
+		</script>
+	</body>
+</html>
